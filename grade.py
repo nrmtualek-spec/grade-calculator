@@ -2,7 +2,7 @@
 
 def calculate_grade(score):
     """รับคะแนน 0-100 แล้วคืนค่าเกรด"""
-    if score >= 85:
+    if score >= 80:
         return "A"
     elif score >= 75:
         return "B"
