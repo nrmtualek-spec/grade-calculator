@@ -2,6 +2,8 @@
 
 def calculate_grade(score):
     """รับคะแนน 0-100 แล้วคืนค่าเกรด"""
+    if not (0 <= score <= 100):
+        raise ValueError(f"คะแนนต้องอยู่ระหว่าง 0-100 ได้รับ: {score}")
     if score >= 80:
         return "A"
     elif score >= 75:
